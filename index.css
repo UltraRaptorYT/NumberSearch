@@ -1,0 +1,25 @@
+#dynamicGrid {
+  display: grid;
+  border: 1px solid black;
+}
+
+#dynamicGrid > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  text-align: center;
+  aspect-ratio: 1 / 1;
+}
+
+.fullHeight {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+@media print {
+  .hidePrint,
+  .hidePrint * {
+    display: none;
+  }
+}
